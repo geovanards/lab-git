@@ -1,0 +1,8 @@
+name: Teste do Zero Geovana
+on: [push]
+jobs:
+  meu-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ola Mundo
+        run: echo "Agora vai!"
