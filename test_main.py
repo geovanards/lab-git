@@ -3,3 +3,4 @@ def test_exemplo():
 
 def test_mensagem():
     print("O teste rodou com sucesso!")
+    
