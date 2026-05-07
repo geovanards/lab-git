@@ -1,8 +1,18 @@
-name: Teste do Zero Geovana
+name: Aula de CI Ceub - Com Testes
+
 on: [push]
+
 jobs:
-  meu-job:
+  meu_trabalho:
     runs-on: ubuntu-latest
     steps:
-      - name: Ola Mundo
-        run: echo "Agora vai!"
+      - name: Checkout do codigo
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Rodar Testes
+        run: python test_main.py
